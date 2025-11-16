@@ -252,7 +252,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-  background-color: #3a2e26;
+  background-color: #005187;
   color: white;
   padding: 50px 0 20px;
 }
@@ -267,7 +267,8 @@ footer {
 .footer-column h3 {
   font-size: 20px;
   margin-bottom: 20px;
-  color: #d4a762;
+  color: #f4f4f4;
+  font-weight: bold;
 }
 
 .footer-column ul {
@@ -285,7 +286,7 @@ footer {
 }
 
 .footer-column ul li a:hover {
-  color: #d4a762;
+  color: #84b6f4;
 }
 
 .social-links {
@@ -300,7 +301,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: #d4a762;
+  color: #84b6f4;
 }
 
 .copyright {
