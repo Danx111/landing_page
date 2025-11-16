@@ -29,6 +29,43 @@ body {
   padding: 0 20px;
 }
 
+
+/*PRUEBAAAAAAAAAAAAA*/
+.quote-box {
+    background-color: #3f9e99; /* Color de fondo del bloque */
+    padding: 40px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.quote-icon {
+    font-size: 40px;
+    font-family: serif; /* O alguna fuente que use serif para la comilla */
+    font-weight: bold;
+    color: #fffacd; /* Amarillo claro */
+    margin-bottom: 15px;
+}
+
+.quote-box h3 {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.quote-box p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.menu-item-content p {
+    margin-bottom: 20px; /* Ajusta este valor (20px) al espacio que desees */
+}
+
+
+/*pruebaaaaaaaaaaaaa*/
 /* Header Styles */
 header {
   background-color: #005187;
@@ -74,7 +111,8 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085') no-repeat center center/cover;
+  background: url('imagenes/inicio.jpg') 
+  no-repeat center center/cover;
   display: flex;
   align-items: center;
   text-align: center;
