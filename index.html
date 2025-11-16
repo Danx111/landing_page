@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brew Haven Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -103,7 +108,7 @@
 
                 <div class="w-full md:w-1/2">
                     <div class="image-wrapper rounded-lg overflow-hidden shadow-xl">
-                        <img src="src/imagenes/chesscake1.jpg" alt="Postre con sirope"
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0" alt="Postre con sirope"
                             class="w-full h-auto object-cover max-h-[400px]">
                     </div>
                 </div>
@@ -112,11 +117,12 @@
         </div>
     </section>
 
-    <!--comment -->
-    <section class="menu bg-[#33313d] py-20" id="menu">
-        <div class="container mx-auto">
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="absolute inset-0 bg-black/10"></div>
+        <div class="container mx-auto ">
             <h2 class="text-4xl font-extrabold text-center mb-12 text-white">
-                Nuestro Menú de Antojos
+                Nuestro Menú
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -127,52 +133,61 @@
                     </h3>
                 </div>
 
-                <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="src/imagenes/chesscake1.jpg" alt="Cheesecake" class="w-1/3 h-40 object-cover">
+                <div class="flex bg-gray-700 rounded-xl shadow-lg overflow-hidden">
+                    <img src="src/imagenes/menu/chesscake1.jpg" alt="Cheesecake" class="w-1/3 h-40 object-cover">
                     <div class="p-4 w-2/3 text-white">
                         <div class="menu-item-content ">
                             <h4 class="text-xl font-bold">Cheesecake</h4>
                             <p class="text-sm text-gray-400">Nuestro postre estrella: cremoso, suave y hecho en casa.
                             </p>
 
-                            <div class="text-xl font-extrabold text-yellow-400 ">$3.50</div>
+                            <div class="price">$3.00</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="src/imagenes/pie_limon.jpg" alt="Pie de Limón" class="w-1/3 h-40 object-cover">
+                    <img src="src/imagenes/menu/cookies.jpg" alt="Cookies" class="w-1/3 h-40 object-cover">
                     <div class="p-4 w-2/3 text-white">
-                        <div class="flex justify-between items-start mb-1">
-                            <h4 class="text-xl font-bold">Pie de Limón</h4>
-                            <div class="text-xl font-extrabold text-yellow-400">$2.95</div>
+                        <div class="menu-item-content ">
+                            <h4 class="text-xl font-bold">Toasted butter cookies</h4>
+                            <p class="text-sm text-gray-400">Crujientes galletas de mantequilla, perfectas para el café.
+                            </p>
+
+                            <div class="price">$1.50</div>
                         </div>
-                        <p class="text-sm text-gray-400">Perfecto balance entre dulce y ácido, con merengue flameado.
-                        </p>
                     </div>
                 </div>
 
                 <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="src/imagenes/ mg/profiteroles.jpg" alt="Profiteroles" class="w-1/3 h-40 object-cover">
+                    <img src="src/imagenes/menu/pie_limon.jpg" alt="Pie de limón" class="w-1/3 h-40 object-cover">
                     <div class="p-4 w-2/3 text-white">
-                        <div class="flex justify-between items-start mb-1">
+                        <div class="menu-item-content ">
+                            <h4 class="text-xl font-bold">Pie de limón</h4>
+                            <p class="text-sm text-gray-400">Perfecto balance entre dulce y ácido, con merengue flameado.
+                            </p>
+
+                            <div class="price">$3.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
+                    <img src="src/imagenes/menu/profiteroles.jpg" alt="Profiteroles" class="w-1/3 h-40 object-cover">
+                    <div class="p-4 w-2/3 text-white">
+                        <div class="menu-item-content ">
                             <h4 class="text-xl font-bold">Profiteroles</h4>
-                            <div class="text-xl font-extrabold text-yellow-400">$2.50</div>
+                            <p class="text-sm text-gray-400">Rellenos de crema pastelera y bañados en azúcar glas.
+                            </p>
+
+                            <div class="price">$2.50</div>
                         </div>
-                        <p class="text-sm text-gray-400">Rellenos de crema pastelera y bañados en chocolate.</p>
                     </div>
                 </div>
 
-                <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="img/cookies.jpg" alt="Cookies" class="w-1/3 h-40 object-cover">
-                    <div class="p-4 w-2/3 text-white">
-                        <div class="flex justify-between items-start mb-1">
-                            <h4 class="text-xl font-bold">Toasted Butter Cookies</h4>
-                            <div class="text-xl font-extrabold text-yellow-400">$1.50</div>
-                        </div>
-                        <p class="text-sm text-gray-400">Crujientes galletas de mantequilla, perfectas para el café.</p>
-                    </div>
-                </div>
+                
+
+                
 
                 <div class="md:col-span-2">
                     <h3 class="text-3xl font-semibold text-yellow-400 mb-6 mt-12 text-center">
@@ -181,64 +196,74 @@
                 </div>
 
                 <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="img/spicytuna.jpg" alt="Spicy Tuna" class="w-1/3 h-40 object-cover">
+                    <img src="src/imagenes/menu/atun.jpg" alt="Snaduche de atún" class="w-1/3 h-40 object-cover">
                     <div class="p-4 w-2/3 text-white">
-                        <div class="flex justify-between items-start mb-1">
+                        <div class="menu-item-content ">
                             <h4 class="text-xl font-bold">Spicy Tuna</h4>
-                            <div class="text-xl font-extrabold text-yellow-400">$3.00</div>
+                            <p class="text-sm text-gray-400">Atún con un toque picante y vegetales frescos, en pan artesanal.
+                            </p>
+
+                            <div class="price">$3.00</div>
                         </div>
-                        <p class="text-sm text-gray-400">Atún con un toque picante y vegetales frescos, en pan
-                            artesanal.</p>
                     </div>
                 </div>
 
                 <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="img/boomdejamon.jpg" alt="Boom de Jamón" class="w-1/3 h-40 object-cover">
+                    <img src="src/imagenes/menu/muffin_jq.jpg" alt="Muffin de jamon y queso" class="w-1/3 h-40 object-cover">
                     <div class="p-4 w-2/3 text-white">
-                        <div class="flex justify-between items-start mb-1">
-                            <h4 class="text-xl font-bold">Boom de Jamón</h4>
-                            <div class="text-xl font-extrabold text-yellow-400">$2.50</div>
+                        <div class="menu-item-content ">
+                            <h4 class="text-xl font-bold">Muffin de jamón y queso</h4>
+                            <p class="text-sm text-gray-400">Ideal para empezar el día o una merienda rápida.
+                            </p>
+
+                            <div class="price">$2.00</div>
                         </div>
-                        <p class="text-sm text-gray-400">El clásico de jamón y queso, caliente y irresistible.</p>
                     </div>
                 </div>
 
                 <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="img/muffinjamon.jpg" alt="Muffin" class="w-1/3 h-40 object-cover">
+                    <img src="src/imagenes/menu/sanduche_jamon.jpg" alt="Sanduche de jamón" class="w-1/3 h-40 object-cover">
                     <div class="p-4 w-2/3 text-white">
-                        <div class="flex justify-between items-start mb-1">
-                            <h4 class="text-xl font-bold">Muffin de Jamón y Queso</h4>
-                            <div class="text-xl font-extrabold text-yellow-400">$2.00</div>
+                        <div class="menu-item-content ">
+                            <h4 class="text-xl font-bold">Boom de jamón</h4>
+                            <p class="text-sm text-gray-400">El clásico de jamón y queso, caliente y irresistible.
+                            </p>
+
+                            <div class="price">$3.50</div>
                         </div>
-                        <p class="text-sm text-gray-400">Ideal para empezar el día o una merienda rápida.</p>
                     </div>
                 </div>
+
 
                 <div class="md:col-span-2">
                     <h3 class="text-3xl font-semibold text-yellow-400 mb-6 mt-12 text-center">
-                        Bebidas Calientes
+                        Bebidas 
                     </h3>
                 </div>
 
                 <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="img/americano.jpg" alt="Americano" class="w-1/3 h-40 object-cover">
+                    <img src="src/imagenes/menu/cafe_a.png" alt="Cafe americano" class="w-1/3 h-40 object-cover">
                     <div class="p-4 w-2/3 text-white">
-                        <div class="flex justify-between items-start mb-1">
-                            <h4 class="text-xl font-bold">Café Americano</h4>
-                            <div class="text-xl font-extrabold text-yellow-400">$1.75</div>
+                        <div class="menu-item-content ">
+                            <h4 class="text-xl font-bold">Café americano</h4>
+                            <p class="text-sm text-gray-400">El clásico vigorizante, con granos de origen local.
+                            </p>
+
+                            <div class="price">$1.50</div>
                         </div>
-                        <p class="text-sm text-gray-400">El clásico vigorizante, con granos de origen local.</p>
                     </div>
                 </div>
 
                 <div class="flex bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                    <img src="img/capuccino.jpg" alt="Capuccino" class="w-1/3 h-40 object-cover">
+                    <img src="src/imagenes/menu/c_capuccino.jpg" alt="Capuccino" class="w-1/3 h-40 object-cover">
                     <div class="p-4 w-2/3 text-white">
-                        <div class="flex justify-between items-start mb-1">
-                            <h4 class="text-xl font-bold">Capuccino Casero</h4>
-                            <div class="text-xl font-extrabold text-yellow-400">$2.95</div>
+                        <div class="menu-item-content ">
+                            <h4 class="text-xl font-bold">Capuccino</h4>
+                            <p class="text-sm text-gray-400">Receta especial de la casa con espuma suave y arte latte.
+                            </p>
+
+                            <div class="price">$3.00</div>
                         </div>
-                        <p class="text-sm text-gray-400">Receta especial de la casa con espuma suave y arte latte.</p>
                     </div>
                 </div>
 
@@ -247,100 +272,9 @@
     </section>
 
     <!--comment-->
-    <!-- Menu Section -->
-    <section class="menu" id="menu">
-        <div class="container">
-            <h2 class="section-title">Our Menu</h2>
-            <div class="menu-items">
-                <div class="contents">
-                    <img src="src/imagenes/Logo.png" alt="logo">
-                    <div>
-                        <h3>buuu</h3>
-                        <p>contexto de todo</p>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="src/imagenes/chesscake1.jpg" alt="Cheescake">
-                    <div class="menu-item-content">
-                        <h3>ChessCake</h3>
-                        <p>A concentrated coffee beverage brewed by forcing hot water under pressure through finely
-                            ground coffee.</p>
-                        <div class="price">$3.50</div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="src/imagenes/pie_limon.jpg" alt="Pie de limón">
-                    <div class="menu-item-content">
-                        <h3>Pie de Limón</h3>
-                        <p>Espresso with steamed milk and a silky layer of foam, traditionally prepared with equal parts
-                            of each.</p>
-                        <div class="price">$4.50</div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="src/imagenes/sanduche_atun.jpg" alt="Sanduche de atún">
-                    <div class="menu-item-content">
-                        <h3>Spicy Tuna</h3>
-                        <p>Our signature cold brew steeped for 18 hours for a smooth, rich flavor with lower acidity.
-                        </p>
-                        <div class="price">$4.75</div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d" alt="Pour Over">
-                    <div class="menu-item-content">
-                        <h3>Pour Over</h3>
-                        <p>Handcrafted single-origin coffee brewed to order for maximum flavor clarity.</p>
-                        <div class="price">$5.00</div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="https://images.unsplash.com/photo-1560717843-60cb77a8a8d1" alt="Latte">
-                    <div class="menu-item-content">
-                        <h3>Latte</h3>
-                        <p>Espresso with a generous amount of steamed milk and a light layer of foam.</p>
-                        <div class="price">$4.75</div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="https://images.unsplash.com/photo-1514066558159-fc8c737ef259" alt="Iced Coffee">
-                    <div class="menu-item-content">
-                        <h3>Iced Coffee</h3>
-                        <p>Our house blend chilled and served over ice with your choice of milk.</p>
-                        <div class="price">$4.25</div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="src/imagenes/chesscake1.jpg" alt="Cheescake">
-                    <div class="menu-item-content">
-                        <h3>ChessCake</h3>
-                        <p>A concentrated coffee beverage brewed by forcing hot water under pressure through finely
-                            ground coffee.</p>
-                        <div class="price">$3.50</div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="src/imagenes/chesscake1.jpg" alt="Cheescake">
-                    <div class="menu-item-content">
-                        <h3>ChessCake</h3>
-                        <p>A concentrated coffee beverage brewed by forcing hot water under pressure through finely
-                            ground coffee.</p>
-                        <div class="price">$3.50</div>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img src="src/imagenes/chesscake1.jpg" alt="Cheescake">
-                    <div class="menu-item-content">
-                        <h3>ChessCake</h3>
-                        <p>A concentrated coffee beverage brewed by forcing hot water under pressure through finely
-                            ground coffee.</p>
-                        <div class="price">$3.50</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Adicional   -->
+
+
+    <!--Formulario   -->
     <section class="contact-form" id="subscribe">
         <div class="container">
             <h2 class="section-title">¿Listo para ordenar? ¡Contáctanos!</h2>
