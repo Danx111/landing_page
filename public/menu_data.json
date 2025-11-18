@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cheesecake",
+    "descripcion": "Nuestro postre estrella: cremoso, suave y hecho en casa.",
+    "precio": 3.00,
+    "imagen_url": "imagenes/menu/chesscake1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Toasted butter cookies",
+    "descripcion": "Crujientes galletas de mantequilla, perfectas para el café.",
+    "precio": 1.50,
+    "imagen_url": "imagenes/menu/cookies.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Pie de limón",
+    "descripcion": "Perfecto balance entre dulce y ácido, con merengue flameado.",
+    "precio": 3.00,
+    "imagen_url": "imagenes/menu/pie_limon.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Profiteroles",
+    "descripcion": "Rellenos de crema pastelera y bañados en azúcar glas.",
+    "precio": 2.50,
+    "imagen_url": "imagenes/menu/profiteroles.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Spicy Tuna",
+    "descripcion": "Atún con un toque picante y vegetales frescos.",
+    "precio": 3.00,
+    "imagen_url": "imagenes/menu/sanduche_atun.jpg"
+  }
+
+]

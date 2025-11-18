@@ -1,6 +1,6 @@
 "use strict";
 // 1. Importa la función saveVote desde js/firebase.js
-import { saveVote, getVotes } from './firebase.js';
+/*import { saveVote, getVotes } from './firebase.js';
 
 // 2. Implementa la siguiente funcionalidad:
 
@@ -106,11 +106,61 @@ const displayVotes = async () => {
 };
 
 
-// d. Invoca la función enableForm en la función de autoejecución.
-// Función de autoejecución (IIFE - Immediately Invoked Function Expression)
 (() => {
-    // Se asegura de que la funcionalidad de escucha del formulario se active
     enableForm();
-    // Llama a displayVotes para mostrar los votos al cargar la página
     displayVotes();
 })();
+*/
+let formatter = new Intl.NumberFormat($locale, {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2
+});
+
+let card_producto = `<div class="flex  rounded-xl shadow-lg overflow-hidden">
+                    <img src="src/imagenes/menu/chesscake1.jpg" alt="Cheesecake" class="w-1/3 h-40 object-cover">
+                    <div class="p-4 w-2/3 text-white">
+                        <div class="menu-item-content">
+                            <p class="producto">Cheesecake</p>
+                            <p class="descripcion">Nuestro postre estrella: cremoso, suave y hecho en casa.
+                            </p>
+                            <div class="price">$3.00</div>
+                        </div>
+                    </div>
+                </div>`
+
+async function cargarProductos() {
+    const url = 'public/menu_data.json';
+    try{
+        const respuesta = await fetch(url);
+        if(!respuesta.ok){
+            throw new Error(`HTTP error! status: ${respuesta.status}`);
+        }
+        const datos = await respuesta.json();
+        return datos;
+    }
+    catch(error){
+        console.error("Error al cargar los productos",error);
+    }
+}
+
+function mostrarCanciones(lista){
+    const contenedor = document.querySelector("#menu-contenedor"); // asegúrate que en el HTML exista .songs-grid
+    if(!contenedor) return;
+    contenedor.innerHTML = "";
+    for (const producto of lista){
+        const div = document.createElement("div");
+        div.className = "flex  rounded-xl shadow-lg overflow-hidden";
+        div.innerHTML = `<img src="src/imagenes/menu/chesscake1.jpg" alt="Cheesecake" class="w-1/3 h-40 object-cover">
+                    <div class="p-4 w-2/3 text-white">
+                        <div class="menu-item-content">
+                            <p class="producto">Cheesecake</p>
+                            <p class="descripcion">Nuestro postre estrella: cremoso, suave y hecho en casa.
+                            </p>
+                            <div class="price">$3.00</div>
+                        </div>
+                    </div>`
+        article.className = "song-card";
+       
+    }
+}
