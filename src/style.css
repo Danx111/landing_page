@@ -135,7 +135,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-image: url(imagenes/menu_fondo.jpg);
+  background-image: url(imagenes/inicio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
