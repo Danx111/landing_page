@@ -6,7 +6,7 @@ const fmtUSD = new Intl.NumberFormat('es-EC', { style: 'currency', currency: 'US
 
 
 async function cargarProductos() {
-    const url = 'public/menu_data.json';
+    const url = 'https://raw.githubusercontent.com/Danx111/datos/refs/heads/main/datos.json';
     try{
         const respuesta = await fetch(url);
         if(!respuesta.ok){
