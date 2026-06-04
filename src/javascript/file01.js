@@ -14,6 +14,7 @@ async function cargarProductos() {
     }
     catch (error) {
         console.error("Error al cargar los productos", error);
+        return [];
     }
 }
 
