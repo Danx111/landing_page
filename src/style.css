@@ -125,7 +125,7 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #1a1a1a;
   padding-top: 80px;
   position: relative;
 }
